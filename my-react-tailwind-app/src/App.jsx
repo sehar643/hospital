@@ -15,19 +15,19 @@ function App() {
       <div className="grid grid-cols-2 gap-4 mb-2 text-sm">
         <div>
           <label className="font-semibold">Patient Name:</label>
-          <input className="border-b border-gray-400 ml-2 w-32 print:border-black" type="text" placeholder="" />
+          <input className="border-b border-gray-400 ml-2 w-52 print:border-black" type="text" placeholder="" />
         </div>
         <div>
           <label className="font-semibold">Father Name:</label>
-          <input className="border-b border-gray-400 ml-2 w-32 print:border-black" type="text" placeholder="" />
+          <input className="border-b border-gray-400 ml-2 w-52 print:border-black" type="text" placeholder="" />
         </div>
         <div>
           <label className="font-semibold">Age:</label>
-          <input className="border-b border-gray-400 ml-2 w-16 print:border-black" type="text" placeholder="" />
+          <input className="border-b border-gray-400 ml-2 w-26 print:border-black" type="text" placeholder="" />
         </div>
         <div>
           <label className="font-semibold">Sex:</label>
-          <input className="border-b border-gray-400 ml-2 w-16 print:border-black" type="text" placeholder="" />
+          <input className="border-b border-gray-400 ml-2 w-26 print:border-black" type="text" placeholder="" />
         </div>
         <div>
           <label className="font-semibold">Address:</label>
@@ -39,7 +39,7 @@ function App() {
         </div>
       </div>
       {/* Vitals */}
-      <div className="grid grid-cols-4 gap-4 mb-4 text-sm">
+      <div className="grid grid-cols-4 gap-4 mt-4 mb-4 text-sm">
         <div>
           <label className="font-semibold">BP:</label>
           <input className="border-b border-gray-400 ml-2 w-16 print:border-black" type="text" placeholder="" />
@@ -66,6 +66,11 @@ function App() {
       {/* Print Button */}
       <div className="text-right print:hidden">
         <button onClick={() => window.print()} className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Print</button>
+      </div>
+      {/* Signature Field at Bottom Right */}
+      <div className="fixed bottom-16 right-24 flex flex-col items-end w-64 print:fixed print:bottom-16 print:right-24 print:w-64">
+        <div className="border-t border-gray-400 w-full mb-1"></div>
+        <div className="text-xs text-gray-500">Signature</div>
       </div>
     </div>
   )
