@@ -34,7 +34,6 @@ function App() {
           </div>
         </div>
       </div>
-      <br/>
       {/* Patient Details */}
       <div className="border-t-2 border-b-2 border-gray-600 py-2 mb-2 text-sm">
         {/* Row 1: Labels */}
@@ -55,7 +54,7 @@ function App() {
         <div className="grid grid-cols-4 gap-x-6 mb-1">
           <div><label className="font-semibold whitespace-nowrap">Cell No.</label></div>
           <div><label className="font-semibold whitespace-nowrap">Address</label></div>
-          <div><label className="font-semibold whitespace-nowrap">Token No.</label></div>
+          <div><label className="font-semibold whitespace-nowrap">MR No.</label></div>
           <div><label className="font-semibold whitespace-nowrap">Date & Time</label></div>
         </div>
         {/* Row 4: Inputs */}
@@ -85,7 +84,6 @@ function App() {
           <input className="border-b border-gray-400 ml-2 w-16 print:border-black" type="text" placeholder="" />
         </div>
       </div>
-      <br/>
       {/* Prescription Area */}
       <div className="mb-4">
         <label className="font-semibold block mb-1">Prescription:</label>
@@ -96,10 +94,10 @@ function App() {
         <button onClick={() => window.print()} className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Print</button>
       </div>
       {/* Signature Field at Bottom Right */}
-      <div className="fixed bottom-16 right-24 flex flex-col items-end w-64 print:fixed print:bottom-16 print:right-24 print:w-64">
+      {/* <div className="fixed bottom-16 right-24 flex flex-col items-end w-64 print:fixed print:bottom-16 print:right-24 print:w-64">
         <div className="border-t border-gray-400 w-full mb-1"></div>
         <div className="text-xs text-gray-500">Signature</div>
-      </div>
+      </div> */}
       <br/>
       <div className="fixed bottom-0 left-0 right-0 text-center ">
         <p className="text-sm font-semibold space-x-4 ">
