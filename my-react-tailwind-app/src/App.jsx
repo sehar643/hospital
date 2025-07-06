@@ -2,10 +2,10 @@ import React from 'react'
 
 function App() {
   return (
-    <div className="max-w-3xl mx-auto my-8 p-8 bg-white  print:shadow-none shadow-lg rounded-lg">
+    <div className="max-w-3xl mx-auto p-5 bg-white  print:shadow-none shadow-lg rounded-lg">
       {/* Header */}
-      <div className="mb-4">
-        <div className="text-center mb-2">
+      <div className="mb-2">
+        <div className="text-center">
           <h2 className="text-xl font-bold">SAKINA NAZIR MOTHER & CHILD CARE HOSPITAL</h2>
           {/* <p className="text-sm">Near Galla Mandi Multan Road Pattoki</p>
           <p className="font-semibold">M. Sohaib Nazir 0300-7770132</p>                */}
